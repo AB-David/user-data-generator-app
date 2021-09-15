@@ -13,7 +13,5 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
-          ls ${{ github.workspace }}
-      - run: npm i jest --save-dev
-      - run: npm test    
+          ls ${{ github.workspace }}   
       - run: echo "🍏 This job's status is ${{ job.status }}."
