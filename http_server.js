@@ -48,6 +48,7 @@ app.post('/add', function (req, res) {
     res.send(db.get('users').value());
 });
 
+//delete the last user
 app.delete('/delete', function (req, res) {
     var user = {
         'name': req.body.name,
