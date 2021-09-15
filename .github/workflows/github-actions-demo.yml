@@ -14,5 +14,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - run: npm i jest --save-dev
       - run: npm test    
       - run: echo "🍏 This job's status is ${{ job.status }}."
